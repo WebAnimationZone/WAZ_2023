@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>BORDER-RADIUS GENERATOR</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <p>Border Radius Generator</p>
+    <div class="main">
+        <p>Output:</p>
+        <div id="output"></div>
+        <input type="text" id="code" value="border-radius: 0% 0% 0% 0%;" disabled>
+
+        <!-- slider 1 -->
+        <input onchange="slider1()" type="range" min="0" max="100" value="0" id="slider1">
+
+        <input onchange="slider2()" type="range" min="0" max="100" value="0" id="slider2">
+        <input onchange="slider3()" type="range" min="0" max="100" value="0" id="slider3">
+        <input onchange="slider4()" type="range" min="0" max="100" value="0" id="slider4">
+    </div>
+    <script> 
+           function slider1() {
+            var slider1 = document.getElementById('slider1').value;
+            var slider2 = document.getElementById('slider2').value;
+            var slider3 = document.getElementById('slider3').value;
+            var slider4 = document.getElementById('slider4').value;
+            document.getElementById('output').style.borderTopLeftRadius = slider1 + '%';
+            document.getElementById('code').value = 'border-radius: ' + slider1 + '% ' + slider2 + '% ' + slider3 + '% ' +
+                slider4 + '%;';
+        }    
+
+        function slider2() {
+            var slider1 = document.getElementById('slider1').value;
+            var slider2 = document.getElementById('slider2').value;
+            var slider3 = document.getElementById('slider3').value;
+            var slider4 = document.getElementById('slider4').value;
+            document.getElementById('output').style.borderTopRightRadius = slider2 + '%';
+            document.getElementById('code').value = 'border-radius: ' + slider1 + '% ' + slider2 + '% ' + slider3 + '% ' +
+                slider4 + '%;';
+        }
+
+        function slider3() {
+            var slider1 = document.getElementById('slider1').value;
+            var slider2 = document.getElementById('slider2').value;
+            var slider3 = document.getElementById('slider3').value;
+            var slider4 = document.getElementById('slider4').value;
+            document.getElementById('output').style.borderBottomLeftRadius = slider3 + '%';
+            document.getElementById('code').value = 'border-radius: ' + slider1 + '% ' + slider2 + '% ' + slider3 + '% ' +
+                slider4 + '%;';
+        }
+
+        function slider4() {
+            var slider1 = document.getElementById('slider1').value;
+            var slider2 = document.getElementById('slider2').value;
+            var slider3 = document.getElementById('slider3').value;
+            var slider4 = document.getElementById('slider4').value;
+            document.getElementById('output').style.borderBottomRightRadius = slider4 + '%';
+            document.getElementById('code').value = 'border-radius: ' + slider1 + '% ' + slider2 + '% ' + slider3 + '% ' +
+                slider4 + '%;';
+        }
+    </script>
+</body>
+
+</html>
