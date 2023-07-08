@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	
+	</head>
+	<body>
+			<div class="container border-gradient border-gradient-green ">
+		<div class="main">
+			Color Generator: <input type="color" id="colorPanel">
+			<input type="button" id="btn" value="Get Color" onclick="myColor()">
+			Result: <input type="text" id="box">
+			</div>
+		</div>
+		<script type="text/javascript">
+			function myColor()
+			{
+				var color = document.getElementById('colorPanel').value;
+				document.body.style.backgroundColor = color;
+				document.getElementById('box').value = color;
+			}
+		</script>
+	</body>
+</html>

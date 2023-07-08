@@ -1,0 +1,76 @@
+*
+{
+	margin: 0;
+	padding: 0;	
+	box-sizing: border-box;
+	font-family: consolas;
+}
+body
+{
+	min-height: 100vh;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.container
+{	border: 10px solid transparent;
+    height: 300px;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.border-gradient {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 10px;
+}
+.border-gradient-green {
+  border-image-source: linear-gradient(221deg, rgba(64,93,230,1) 2%, rgba(91,81,216,1) 10%, rgba(131,58,180,1) 20%, rgba(193,53,132,1) 30%, rgba(253,29,29,1) 40%, rgba(245,96,64,1) 50%, rgba(247,119,55,1) 60%, rgba(252,175,69,1) 70%, rgba(255,220,128,1) 80%, rgba(0,200,83,1) 90%, rgba(178,255,89,1) 100%);
+}
+
+.main
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 200px;
+	width: 600px;
+	background-color: #fff;
+	box-shadow: 0 0 3px #333;
+	border-radius: 10px;
+}
+#colorPanel
+{
+	background: none;
+	outline: none;
+	border: none;
+	height: 40px;
+	width: 60px;
+	cursor: pointer;
+}
+#btn
+{
+	background: black;
+	color: white;
+	outline: none;
+	border: none;
+	height: 40px;
+	width: 140px;
+	border-radius: 50px;
+	cursor: pointer;
+}
+#box
+{
+	outline: none;
+	border: 2px solid #333;
+	border-radius: 50px;
+	height: 40px;
+	width: 120px;
+	padding: 0 10px;
+}
