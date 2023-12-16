@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Animation 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="scene">
+        <div class="floor"></div>
+        <div class="cube">
+            <div class="front"></div>
+            <div class="back"></div>
+            <div class="left"></div>
+            <div class="right"></div>
+            <div class="top">
+                <div class="ballshadow"></div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+        <div class="ball"></div>
+    </div>
+    <div class="menu">
+        <div class="vitesserotation">
+            <label for="slider">Rotation Speed</label>
+            <input type="range" id="slider" min="0" max="100" value="30">
+        </div>
+        <div class="vitesserotation">
+            <label for="slider">Ball Speed</label>
+            <input type="range" id="slider2" min="0" max="15" value="1.5">
+        </div>
+        <div>
+            Cube <input type="color" id="colorpicker">
+        </div>
+        <div>
+            Ball <input type="color" id="colorpicker2">
+        </div>
+        <div>
+            Floor
+            <input type="color" id="colorpicker3">
+            <input type="color" id="colorpicker4">
+        </div>
+        <div>
+            Background Color <input type="color" id="colorpicker5">
+        </div>
+        <span>Reverse direction</span>
+        <label class="switch">
+            <input type="checkbox" id="checke">
+            <span class="slider round"></span>
+        </label>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
